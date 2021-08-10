@@ -1,0 +1,180 @@
+:root{
+    --vermelho: #E50914;
+    --preto:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.section {
+    background: black;
+    padding: 3rem 0;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+}
+
+.img-tv {
+    position: relative;
+}
+
+.img-tv img {
+    position: relative;
+    z-index: 1;
+}
+.video-tv {
+    position: absolute;
+    width: 400px;
+    top: 80px;
+    left: 70px;
+}
+
+.download .grid > div :first-child {
+    order: 2;
+}
+
+.download .img-tv{
+    order: 1;
+}
+
+.device-pile .video-tv {
+    width: 340px;
+    top: 45px;
+    left: 100px;
+}
+
+.footer .form-cta {
+    margin-top: 0;
+}
+
+.footer {
+    padding: 4rem 0 2rem 0;
+    border-top: 0px solid #222;
+    background: black;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.footer p {
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+}
+
+.form-cta {
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-cta input {
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.form-cta button {
+    background: #e50914;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-cta button ::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url("../img/seta.svg");
+    margin-left: 20px;
+}
+
+.form-cta button :hover {
+    background: #f40612;
+}
